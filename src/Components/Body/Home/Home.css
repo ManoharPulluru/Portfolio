@@ -1,3 +1,36 @@
+/* Define keyframes for the animation */
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeAppaer {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .homeMain {
   height: 100%;
   width: 100%;
@@ -13,7 +46,6 @@
 }
 
 .homeContent {
-  /* height: 80%; */
   width: 70%;
   display: flex;
   flex-direction: column;
@@ -22,14 +54,17 @@
   left: 5%;
 }
 
-.homeContentLine1,
-.homeContentLine2 {
+.homeContentLine1 {
   font-size: 48px;
   font-weight: bolder;
+  animation: slideFromTop 0.5s ease-in-out;
 }
 
 .homeContentLine2 {
+  font-size: 48px;
+  font-weight: bolder;
   color: #ffb400;
+  animation: slideFromLeft 0.5s ease-in-out;
 }
 
 .homeContentLine2 span {
@@ -40,7 +75,22 @@
   width: 70%;
   margin-top: 20px;
   font-size: 14px;
-  /* font-weight: 300; */
+  white-space: pre-wrap;
+}
+
+.typingEffect {
+  display: inline;
+  white-space: nowrap;
+  overflow: hidden;
+  /* animation: blink 0.75s step-end infinite; */
+  height: 100px;
+}
+
+/* Blinking cursor animation */
+@keyframes blink {
+  0% { border-right-color: transparent; }
+  50% { border-right-color: #ffb400; }
+  100% { border-right-color: transparent; }
 }
 
 .homeContact {
@@ -49,6 +99,7 @@
   margin-top: 20px;
   display: flex;
   align-items: center;
+  animation: fadeAppaer 0.5s ease-in;
 }
 
 .gmailLogo {
@@ -63,7 +114,8 @@
   transition: filter 0.3s ease-in-out;
 }
 
-.downloadBtn, .phNumber  {
+.downloadBtn,
+.phNumber {
   height: 80%;
   width: fit-content;
   border-radius: 30px;
@@ -74,7 +126,6 @@
   align-items: center;
   justify-content: center;
   color: #ffb400;
-  /* border: 1px solid #0274b3; */
   gap: 10px;
   background-color: white;
   transition: all 0.3s ease-in-out;
@@ -88,7 +139,7 @@
 }
 
 .downloadBtn:hover .downloadImg {
-    filter: brightness(100);
+  filter: brightness(100);
 }
 
 .linkedinLogo {
@@ -98,64 +149,65 @@
 }
 
 .gmailLogo:hover {
-    scale: 1.2;
+  transform: scale(1.2);
 }
+
 .linkedinLogo:hover {
-  scale: 1.05;
+  transform: scale(1.05);
 }
 
 .navDiv {
-    position: absolute;
-    top: 5%;
-    width: 40%;
-    left: 5%;
-    height: 10%;
-    display: flex;
+  position: absolute;
+  top: 5%;
+  width: 40%;
+  left: 5%;
+  height: 10%;
+  display: flex;
 }
 
 .phoneNumberDiv {
-    height: 100%;
-    width: fit-content;
-    display: flex;
-    align-items: center;
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  align-items: center;
 }
 
 .phoneNumberDiv img {
-    height: 40%;
+  height: 40%;
 }
 .phoneNumberDiv div {
-    font-size: 20px;
-    width: fit-content;
-    margin-left: 20px;
+  font-size: 20px;
+  width: fit-content;
+  margin-left: 20px;
 }
 .phoneNumberDiv1 {
-    height: 100%;
-    width: fit-content;
-    display: flex;
-    align-items: center;
-    margin-left: 100px;
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
 }
 
 .phoneNumberDiv1 img {
-    height: 40%;
+  height: 40%;
 }
 .phoneNumberDiv1 div {
-    font-size: 20px;
-    width: fit-content;
-    margin-left: 20px;
+  font-size: 20px;
+  width: fit-content;
+  margin-left: 20px;
 }
 
 .skillsCaurosel {
-    width: 50%;
-    height: 20%;
-    background-color: black;
-    display: flex;
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
+  width: 50%;
+  height: 20%;
+  background-color: black;
+  display: flex;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
 }
 
 .phNumber {
-  margin-left: 30px;  
+  margin-left: 30px;
   cursor: pointer;
 }
