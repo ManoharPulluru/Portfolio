@@ -7,7 +7,6 @@ import download from "/jpg/download.png";
 import resume from "/pdf/MANOHAR_PULLURU_RESUME.pdf"
 import phone from "/jpg/phone.png";
 import exp from "/jpg/experience.png";
-import Carousel from "../../Features/Caurosel";
 
 const Home = () => {
   const [typedText, setTypedText] = useState("");
