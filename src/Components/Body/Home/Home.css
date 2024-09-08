@@ -1,0 +1,161 @@
+.homeMain {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: #e5e5e5;
+}
+
+.profileImage {
+  height: 90%;
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+}
+
+.homeContent {
+  /* height: 80%; */
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+
+.homeContentLine1,
+.homeContentLine2 {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.homeContentLine2 {
+  color: #ffb400;
+}
+
+.homeContentLine2 span {
+  color: black;
+}
+
+.homeContent p {
+  width: 70%;
+  margin-top: 20px;
+  font-size: 14px;
+  /* font-weight: 300; */
+}
+
+.homeContact {
+  height: 50px;
+  width: 70%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.gmailLogo {
+  height: 70%;
+  margin-left: 40px;
+  width: 6%;
+  transition: all 0.5s ease-in-out;
+}
+
+.downloadImg {
+  height: 60%;
+  transition: filter 0.3s ease-in-out;
+}
+
+.downloadBtn, .phNumber  {
+  height: 80%;
+  width: fit-content;
+  border-radius: 30px;
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffb400;
+  /* border: 1px solid #0274b3; */
+  gap: 10px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.downloadBtn:hover {
+  background-color: #ffb400;
+  color: white;
+  box-shadow: 10px 0 10px white;
+  border: none;
+}
+
+.downloadBtn:hover .downloadImg {
+    filter: brightness(100);
+}
+
+.linkedinLogo {
+  height: 70%;
+  margin-left: 40px;
+  transition: all 0.5s ease-in-out;
+}
+
+.gmailLogo:hover {
+    scale: 1.2;
+}
+.linkedinLogo:hover {
+  scale: 1.05;
+}
+
+.navDiv {
+    position: absolute;
+    top: 5%;
+    width: 40%;
+    left: 5%;
+    height: 10%;
+    display: flex;
+}
+
+.phoneNumberDiv {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.phoneNumberDiv img {
+    height: 40%;
+}
+.phoneNumberDiv div {
+    font-size: 20px;
+    width: fit-content;
+    margin-left: 20px;
+}
+.phoneNumberDiv1 {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.phoneNumberDiv1 img {
+    height: 40%;
+}
+.phoneNumberDiv1 div {
+    font-size: 20px;
+    width: fit-content;
+    margin-left: 20px;
+}
+
+.skillsCaurosel {
+    width: 50%;
+    height: 20%;
+    background-color: black;
+    display: flex;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+
+.phNumber {
+  margin-left: 30px;  
+  cursor: pointer;
+}

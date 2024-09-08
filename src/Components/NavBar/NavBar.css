@@ -1,0 +1,56 @@
+.NavbarMain {
+    width: 5%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.navIcon {
+    width: 50%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative; 
+    cursor: pointer;
+}
+
+.navIconBg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 0%;
+    width: 0%;
+    background-color: #FFB400; /* Default color */
+    transition: height 0.3s ease, width 0.3s ease;
+}
+
+.navIcon:hover .navIconBg,
+.navIcon.active .navIconBg {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.navIcon:hover img,
+.navIcon.active img {
+    filter: invert(1);
+}
+
+.navIcon img {
+    height: 50%;
+    z-index: 1;
+    transition: filter 0.2s ease-in-out;
+}
+
+/* Styles for active icons with different background colors */
+.navIcon.active .navIconBg {
+    background-color: #FFB400; /* Change this to your desired color */
+}
