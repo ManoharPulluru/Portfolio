@@ -129,3 +129,22 @@
     filter: invert();
   }
   
+
+  @media (max-width: 768px) {
+    .projectsTitleBox {
+      width: 95%;
+    }
+    .projectBoxes {
+        width: 90%;
+        overflow-y: scroll;
+    }
+
+    .projectBoxes::-webkit-scrollbar {
+        display: none;
+    }
+
+    .projectCard {
+        width: 90%;
+    }
+
+  }

@@ -211,3 +211,46 @@
   margin-left: 30px;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .profileImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+  .homeContentLine1 {
+    font-size: 35px;
+  }
+  .homeContentLine2 {
+    font-size: 35px;
+    width: 100%;
+  }
+
+  .homeContent {
+    width: 100%;
+  }
+
+  .homeContact  {
+    width: 100%;
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+
+  .gmailLogo {
+    height: 80%;
+    width: auto;
+  }
+
+  .phNumber {
+    margin: 0px;
+  }
+
+  .homeContent p {
+    width: 90%;
+    height: 120px;
+    
+  }
+
+}

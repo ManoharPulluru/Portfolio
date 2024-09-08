@@ -168,3 +168,46 @@
     width: 70%;
   }
   
+
+  @media (max-width: 768px) {
+    .expTop {
+        width: 100%;
+    }
+    .expBot {
+        width: 90%;
+        text-align: justify;
+    }
+
+    .experienceDivs {
+        width: 90%;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .companyDiv {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .companyDivLeft {
+        width: 100%;
+        align-items: center;
+    }
+
+    .companyDivRight {
+        width: 100%;
+    }
+
+    .companyLogosDiv {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .companyTimeline {
+        padding: 0;
+        width: 90%;
+    }
+
+    .expTitleDiv {
+        margin-top: 50px;
+    }
+  }

@@ -2,8 +2,8 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import NavBar from './Components/NavBar/NavBar'; // Import the Navbar component
-import Contact from './Components/Body/Contact/Contact'; // Import page components
+import NavBar from './Components/NavBar/NavBar';
+import Contact from './Components/Body/Contact/Contact';
 import Home from './Components/Body/Home/Home';
 import Education from './Components/Body/Education/Education';
 import Experience from './Components/Body/Experience/Experience';
